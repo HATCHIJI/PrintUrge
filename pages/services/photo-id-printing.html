@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo and ID Printing | PrintUrge</title>
+  <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body class="service-page">
+  <div data-include="site-header"></div>
+
+  <main id="top">
+    <section class="section service-hero">
+      <div class="container service-hero-grid">
+        <div class="service-hero-copy">
+          <span class="badge">Service</span>
+          <h1>Photo and ID Printing</h1>
+          <p>
+            ID sizes and photo paper prints with accurate color and crisp details. Get the
+            right format for school, work, and official requirements.
+          </p>
+          <div class="service-hero-actions">
+            <a href="../../index.html#upload" class="btn btn-primary">Start a request</a>
+          </div>
+        </div>
+
+        <div class="card upload-card">
+          <h2>Print details</h2>
+
+          <form class="quick-form" id="quick-form" novalidate>
+            <div class="quick-layout is-document" id="quick-layout">
+              <div class="quick-slot slot-file" id="slot-file">
+                <div class="file-control-group" id="file-control-group">
+                  <label class="field choose-file-field">
+                    <span>Choose File</span>
+                    <input
+                      id="print-file"
+                      name="print-file"
+                      type="file"
+                      accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.jpeg,.png"
+                    />
+                  </label>
+
+                  <button type="button" class="scan-btn" id="scan-file-btn">Scan File</button>
+                  <span class="digitizer-pill" id="digitizer-pill">File Digitizer</span>
+                </div>
+              </div>
+
+              <div class="quick-slot slot-copies" id="slot-copies">
+                <label class="field">
+                  <span>Copies</span>
+                  <input id="copies" name="copies" type="number" min="1" value="20"/>
+                </label>
+              </div>
+
+              <div class="quick-slot slot-color" id="slot-color">
+                <label class="field">
+                  <span>Color Mode</span>
+                  <select id="color-mode" name="color-mode">
+                    <option value="bw">Black and White</option>
+                    <option value="color">Full Color</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="quick-slot slot-paper" id="slot-paper">
+                <label class="field">
+                  <span>Paper Size</span>
+                  <select id="paper-size" name="paper-size">
+                    <option value="a4">A4</option>
+                    <option value="long">Long Bond</option>
+                    <option value="a3">A3</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="quick-slot slot-pages" id="slot-pages">
+                <label class="field">
+                  <span>Pages</span>
+                  <input id="pages" name="pages" type="number" min="1" value="1"/>
+                </label>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="auth-modal"></div>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
